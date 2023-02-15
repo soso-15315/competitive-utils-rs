@@ -77,22 +77,22 @@ fn prime_factorize(mut n: usize) -> (Vec<usize>, std::collections::HashMap<usize
     (ans, counts)
 }
 
-#[test]
-fn test_is_prime() {
-    assert_eq!(is_prime(2), true);
-    assert_eq!(is_prime(3), true);
-    assert_eq!(is_prime(4), false);
-    assert_eq!(is_prime(5), true);
-    assert_eq!(is_prime(6), false);
-    assert_eq!(is_prime(7), true);
-    assert_eq!(is_prime(8), false);
-    assert_eq!(is_prime(9), false);
-    assert_eq!(is_prime(10), false);
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn test_is_prime() {
+        assert_eq!(is_prime(2), true);
+        assert_eq!(is_prime(3), true);
+        assert_eq!(is_prime(4), false);
+        assert_eq!(is_prime(5), true);
+        assert_eq!(is_prime(6), false);
+        assert_eq!(is_prime(7), true);
+        assert_eq!(is_prime(8), false);
+        assert_eq!(is_prime(9), false);
+        assert_eq!(is_prime(10), false);
+    }
 
     #[test]
     fn test_sleve_of_eratosthenes() {
