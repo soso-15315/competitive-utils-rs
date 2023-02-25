@@ -17,7 +17,7 @@ fn is_prime(n: usize) -> bool {
 }
 
 // O(n log log n) returns a list of prime numbers less than or equal to n.
-fn sleve_of_eratosthenes(n: usize) -> Vec<usize> {
+fn sieve_of_eratosthenes(n: usize) -> Vec<usize> {
     let mut is_prime = vec![true; n + 1];
     is_prime[0] = false;
     is_prime[1] = false;
@@ -95,9 +95,9 @@ mod tests {
     }
 
     #[test]
-    fn test_sleve_of_eratosthenes() {
+    fn test_sieve_of_eratosthenes() {
         let n = 10;
-        let mut primes = sleve_of_eratosthenes(n);
+        let mut primes = sieve_of_eratosthenes(n);
         primes.sort();
         assert_eq!(primes, vec![2, 3, 5, 7]);
     }
