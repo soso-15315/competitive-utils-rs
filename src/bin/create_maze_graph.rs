@@ -3,7 +3,7 @@
 fn main() {}
 
 // O(h * w) returns a graph of a maze.
-fn create_maze_graph(h: usize, w: usize, s: Vec<Vec<char>>, wall: char) -> Vec<Vec<usize>> {
+fn create_maze_graph(h: usize, w: usize, s: &Vec<Vec<char>>, wall: char) -> Vec<Vec<usize>> {
     let mut graph = vec![vec![]; h * w];
 
     for i in 0..h {
@@ -51,7 +51,7 @@ mod tests {
             vec!['.', '.', '.'],
         ];
         let wall = '#';
-        let mut graph = create_maze_graph(h, w, s, wall);
+        let mut graph = create_maze_graph(h, w, &s, wall);
 
         for i in 0..graph.len() {
             graph[i].sort();
