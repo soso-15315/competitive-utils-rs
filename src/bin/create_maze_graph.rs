@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-fn main() {}
-
 // O(h * w) returns a graph of a maze.
 fn create_maze_graph(h: usize, w: usize, s: &Vec<Vec<char>>, wall: char) -> Vec<Vec<usize>> {
     let mut graph = vec![vec![]; h * w];
@@ -73,3 +71,5 @@ mod tests {
         );
     }
 }
+
+fn main() {}

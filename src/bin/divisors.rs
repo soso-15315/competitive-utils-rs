@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-fn main() {}
-
 // O(√n) returns a list of divisors of n.
 fn divisors(n: usize) -> Vec<usize> {
     let mut lst: Vec<usize> = vec![];
@@ -34,3 +32,5 @@ mod tests {
         assert_eq!(lst, vec![1, 2, 3, 4, 6, 12]);
     }
 }
+
+fn main() {}

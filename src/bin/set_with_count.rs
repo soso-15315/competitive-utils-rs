@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-fn main() {}
-
 // hash set with a counter.
 struct SetWithCount<T> {
     set: std::collections::HashSet<T>,
@@ -76,3 +74,5 @@ mod tests {
         assert_eq!(set.get(1), None);
     }
 }
+
+fn main() {}

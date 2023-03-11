@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-fn main() {}
-
 // O(n + m) returns a shortest distance from v to each node.
 fn bfs(v: usize, graph: &Vec<Vec<usize>>) -> Vec<isize> {
     let mut dist = vec![-1; graph.len()];
@@ -44,3 +42,5 @@ mod tests {
         assert_eq!(dist, vec![0, 1, 1, 2, 3, 3, -1]);
     }
 }
+
+fn main() {}

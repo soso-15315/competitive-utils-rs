@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-fn main() {}
-
 // O(log(max(a, b))) returns the greatest common divisor of a and b.
 fn gcd(mut a: usize, mut b: usize) -> usize {
     let mut r = a % b;
@@ -137,3 +135,5 @@ mod tests {
         assert_eq!(ncr_m(10, 2, 1_000_000_007), 45);
     }
 }
+
+fn main() {}

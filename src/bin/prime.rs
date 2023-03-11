@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-fn main() {}
-
 // O(√n) returns true if n is a prime number.
 fn is_prime(n: usize) -> bool {
     let mut i = 2;
@@ -112,3 +110,5 @@ mod tests {
         assert_eq!(counts.get(&3), Some(&1));
     }
 }
+
+fn main() {}

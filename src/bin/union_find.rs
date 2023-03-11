@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-fn main() {}
-
 // UnionFind Tree
 struct UnionFind {
     par: Vec<usize>,
@@ -72,3 +70,5 @@ mod tests {
         assert_eq!(uf.is_same(0, 3), true);
     }
 }
+
+fn main() {}

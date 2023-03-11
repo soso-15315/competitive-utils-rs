@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-fn main() {}
-
 // O(n + m) returns a list of nodes in the order of the depth-first search.
 fn dfs(start: usize, graph: &Vec<Vec<usize>>) -> Vec<usize> {
     let mut visited: Vec<bool> = vec![false; graph.len()];
@@ -33,3 +31,5 @@ mod tests {
         assert_eq!(route, vec![0, 1, 3, 2]);
     }
 }
+
+fn main() {}
