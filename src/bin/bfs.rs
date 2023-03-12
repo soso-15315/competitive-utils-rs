@@ -8,8 +8,7 @@ fn bfs(v: usize, graph: &Vec<Vec<usize>>) -> Vec<isize> {
     dist[v] = 0;
 
     while !queue.is_empty() {
-        let pos = *queue.front().unwrap();
-        queue.pop_front().unwrap();
+        let pos = queue.pop_front().unwrap();
 
         for i in 0..graph[pos].len() {
             let nex = graph[pos][i];
